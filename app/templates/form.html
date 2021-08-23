@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <Title>RSS feed reader website</Title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<div class="content-section">
+    <h1> Welcome to the RSS feed reader website</h1>
+    <form action="/feed/" method = "POST">
+        <h2>Please, enter a valid url: </h2>
+        <p><input type = "text" name = "url" /></p>
+        <p><input type = "submit" value = "Submit" /></p>
+    </form>
+</div>
